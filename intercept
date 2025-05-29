@@ -1,0 +1,6 @@
+print("▶ 회귀 계수")
+print("-" * 30)
+print(f"절편 (Intercept): {model.intercept_:.4f}")
+coefficients = pd.Series(model.coef_, index=X.columns)
+print(coefficients)
+print("-" * 30)
